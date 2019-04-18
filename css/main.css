@@ -1,0 +1,199 @@
+*{margin: 0; padding: 0;}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+body{
+	background-color: #333333;
+}
+
+header{
+	width: 100%;
+	height: 100px;
+    line-height: 100px;
+	background: #424242;
+	box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+
+.left{
+	float: left;
+	width: 50%;
+	height: 100px;
+	/*border: 1px solid red;*/
+}
+
+.right{
+	float: right;
+	width: 49%;
+	height: 100px;
+	/*border: 1px solid red;*/
+}
+
+.logo{
+	height: 70px;
+	position: relative;
+	left: 7px;
+	vertical-align: middle;
+	/*border: 1px solid red;*/
+}
+
+.name{
+	display: inline;
+	vertical-align: middle;
+	margin-left: 3px;
+	color: white;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+	font-size: 70px;
+	text-decoration: none;
+	/*border: 1px solid red;*/
+}
+
+.name, .logo{
+	cursor: pointer;
+}
+
+nav{
+	display: inline;
+	vertical-align: middle;
+	margin-left: 30px;
+}
+
+li{
+	display: inline;
+	text-transform: uppercase;
+	font-family: 'Roboto Condensed', sans-serif;
+	margin-left: 20px;
+}
+
+li a{
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+}
+
+.buttoms{
+	margin-right: 40px;
+}
+
+.signup_button{
+	float: right;
+	margin-left: 20px;
+	vertical-align: middle;
+
+}
+
+.login{
+	float: right;
+	font-size: 20px;
+	vertical-align: middle;
+	text-transform: uppercase;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: white;
+	text-decoration: none;
+}
+
+.signup{
+	color: #fff; /* цвет текста */
+	font-size: 20px;
+	text-decoration: none; /* убирать подчёркивание у ссылок */
+	user-select: none; /* убирать выделение текста */
+	background: rgb(254, 210, 1);
+	border: 1.2px solid white;
+	border-radius: 30px;
+	box-shadow:
+	0 1px rgba(255,255,255,.2) inset,
+	0 3px 5px rgba(0,1,6,.5),
+	0 0 1px 1px rgba(0,1,6,.2);
+	padding: .5em 1em; /* отступ от текста */
+	outline: none; /* убирать контур в Mozilla */
+	text-transform: uppercase;
+	font-family: 'Roboto Condensed', sans-serif;
+	/*height: 20px;
+	width: 30px;*/
+	/*border-radius: 100;*/
+}
+
+section{
+	margin-top: 40px;
+	margin-left: auto;
+    margin-right: auto;
+	width: 80%;
+	min-height: 500px;
+	/*border: 1px solid red;*/
+}
+
+.gta5{
+	width: 234px;
+	height: 390px;
+}
+
+.all_products .product{
+	width: 234px;
+	height: 390px;
+	text-decoration: none;
+	display: inline-block;
+	margin-left: 40px;
+}
+
+.all_products h1{
+	/*font-family: Geometria, ProximaNova, sans-serif;
+	color: white;
+	font-size: 11px;
+	font-weight: bold;
+	margin-top: 10px;*/
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.all_products h4{
+	color: #666;
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.all_products .price{
+	margin-top: 16px;
+	display: block;
+}
+.all_products .price .sale{
+	background: #58f58c;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #20a95d;
+    padding: 12px;
+    float: left;
+}
+
+.all_products .price .new{
+	font-size: 18px;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    float: left;
+    padding: 12px 8px 0 12px;
+}
+.all_products .price .old{
+	color: #acacac;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: line-through;
+    padding: 16px 7px;
+}
